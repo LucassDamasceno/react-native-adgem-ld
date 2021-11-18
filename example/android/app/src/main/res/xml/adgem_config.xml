@@ -1,0 +1,6 @@
+<adgem-configuration
+  applicationId="your appId"
+  interstitialAdsEnabled="true"
+  rewardedAdsEnabled="true"
+  offerWallEnabled="true"
+  lockOrientation="false"/>
