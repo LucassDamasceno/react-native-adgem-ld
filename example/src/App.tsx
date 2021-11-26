@@ -21,7 +21,7 @@ export default function App() {
       <Button
         title="Initialize adgem"
         onPress={() => {
-          adgem.initializeAdgem();
+          adgem.initializeAdgem('playerId');
         }}
       />
 

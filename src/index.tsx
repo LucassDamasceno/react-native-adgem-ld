@@ -23,8 +23,8 @@ export function multiply(a: number, b: number): Promise<number> {
   return Adgem.multiply(a, b);
 }
 
-export function initializeAdgem(): Promise<number> {
-  return Adgem.initializeAdgem();
+export function initializeAdgem(playerId: string): Promise<number> {
+  return Adgem.initializeAdgem(playerId);
 }
 export function showOfferWall(): Promise<number> {
   return Adgem.showOfferWall();

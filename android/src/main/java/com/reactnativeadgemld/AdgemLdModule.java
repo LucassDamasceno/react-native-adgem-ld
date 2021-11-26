@@ -9,6 +9,7 @@ import androidx.annotation.Nullable;
 
 import com.adgem.android.AdGem;
 import com.adgem.android.OfferWallCallback;
+import com.adgem.android.PlayerMetadata;
 import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReactApplicationContext;
@@ -77,10 +78,12 @@ public class AdgemLdModule extends ReactContextBaseJavaModule {
     public static native int nativeMultiply(int a, int b);
 
     @ReactMethod
-    public void initializeAdgem(){
+    public void initializeAdgem(String playerId){
       Context context = getReactApplicationContext();
       AdGem adgem = AdGem.get();
       adgem.registerOfferWallCallback(callback);
+      PlayerMetadata player = new PlayerMetadata.Builder().id(playerId).build();
+      adgem.setPlayerMetaData((player));
     }
 
     @ReactMethod

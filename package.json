@@ -1,6 +1,6 @@
 {
   "name": "react-native-adgem-ld",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "integration with adgem",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
